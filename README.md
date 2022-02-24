@@ -1,48 +1,36 @@
 ## Table of contents
 
-* [Assignment requirement](#assignment-reqirement)
-* [Technologies](#technologies)
-* [Getting Started](#gettingstarted)
-* [My details](#my-details)
+- [Table of contents](#table-of-contents)
+- [Assignment requirement](#assignment-requirement)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [My details](#my-details)
 
 ## Assignment requirement
 
 **Requirements:**
 
-Create a web application using a technology stack that meets Cloud-Native Web Application Requirements.
-
+We are going to start setting up our AWS infrastructure. This assignment will focus on setting up our networking resources such as Virtual Private Cloud (VPC), Internet Gateway, Route Tables, and Routes. We will use AWS CloudFormation for infrastructure setup and tear down.
 ## Technologies
 
-Project is created with:
-
-* JavaScript
-
-* express
-
-* RESTful API
+*aws
 
   
-
 ## Getting Started
 
 ```sh
 #clone it
-git clone git@github.com:Xinyi-12/webservice-1.git
+git clone git@github.com:Xinyi-12/infrastructure.git
 
-# Make it your own
-rm -rf .git && git init && npm init
+# AWS CLI
+aws configure --profile=<xxxx>
 
-# Install dependencies
-npm install
+aws cloudformation create-stack --stack-name <thur-vpc5> --template-body 
+<file:///home/vpc6.yml>
 
-# Start development live-reload server
-npm start
+aws cloudformation list-stack-resources --stack-name <thur-vpc5>
 
-#Start server:
-server running at 127.0.0.1
-
-```
-
+aws cloudformation delete-stack --stack-name <thur-vpc5>
 
 
 ## My details
