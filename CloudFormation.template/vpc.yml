@@ -438,8 +438,7 @@ Resources:
             - EndpointAddress: !GetAtt DatabaseInstance.Endpoint.Address
               Port: !GetAtt DatabaseInstance.Endpoint.Port
               Bucket_Name: "arn:aws:s3:::encryptedbucket01-info6255-userpic.dev.xinyapp.me"
-              AccessKey: "AKIA2EQZ22PO56Q33A37"
-              SecretKey: "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"
+ 
 
 
 
